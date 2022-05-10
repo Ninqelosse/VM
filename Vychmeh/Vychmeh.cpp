@@ -78,13 +78,13 @@ Kepl DecToKepl(Vector R, Vector V,double mu) {
 	Vector N = { 0,0,1 };
 	//cout << "h=" << h.x << " " << h.y << " " << h.z << endl;
 	n = VectorMultiply(N, h);
-	//if (R * V >= 0.0) {
+	if (R * V >= 0.0) {
 		nu = acos(e * R / (NormVector(e) * NormVector(R)));
 		cout << e * R / (NormVector(e) * NormVector(R)) << endl;
-//	}
-	//else {
-	//	nu = 2 * 3.14 - acos(e * R / (NormVector(e) * NormVector(R)));;
-	//}
+	}
+	else {
+		nu = 2 * 3.14 - acos(e * R / (NormVector(e) * NormVector(R)));;
+	}
 	K.i = acos(h.z / NormVector(h));
 	K.e = NormVector(e);
 	
