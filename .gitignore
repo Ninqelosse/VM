@@ -1,2 +1,8 @@
 x64/
 x86/
+Debug/
+Vychmeh.sln
+Vychmeh.vcxproj.filters
+Vychmeh.vcxproj
+Vychmeh.vcxproj.user
+packages/
